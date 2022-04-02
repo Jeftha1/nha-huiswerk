@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="utf-8">
+		<title>Tandartsafspraak</title>
+	</head>
+	<body>
+		<!-- titel en paragraaf -->
+		<h1>Tandartsafspraak</h1>
+		<p>De tandarts en het team van Tandartspraktijk P. van der Ende bieden u zorg, persoonlijke aandacht en adviezen voor uw mond en gebit. Want goede mondverzorging is belangrijk. Voor een eerste indruk èn voor uw gezondheid.</p>
+
+		<!-- afbeeldingen -->
+		<figure>
+			<img src="afbeeldingen/tand.jpg" alt="Een afbeelding van een tand" title="Tand" width="300" height="300">
+			<img src="afbeeldingen/tandenborstel.png" alt="Een afbeelding van een tandenborstel" title="Tandenborstel" width="300" height="300">
+			<img src="afbeeldingen/tandpasta.png" alt="Een afbeelding van een tube tandpasta" title="Tandpasta" width="300" height="300">
+		</figure>
+
+		<!-- formulier -->
+		<form id="Tandartspraktijk" method="post" action="https://formspree.io/f/xknyvzdv">
+			<fieldset>
+				<legend>Persoonlijke gegevens</legend>
+				<label for="naam">Naam:</label>
+				<input id="naam" type="text" name="naam"><br><br>
+				<input type="radio" name="geslacht" value="man" checked>Man
+				<input type="radio" name="geslacht" value="vrouw">Vrouw
+				<input type="radio" name="geslacht" value="anders">Anders <br><br>
+				<label for="adres">Adres:</label>
+				<input id="adres" type="text" name="adres"><br><br>
+				<label for="postcode">Postcode:</label>
+				<input id="postcode" type="text" name="postcode"><br><br>
+				<label for="woonplaats">Woonplaats:</label>
+				<input id="woonplaats" type="text" name="woonplaats"><br><br>
+				<label for="e-mail">E-mail:</label>
+				<input id="e-mail" type="email" name="emailadres"><br><br>
+				<label for="tel_nr">Telefoonnummer:</label>
+				<input id="tel_nr" type="tel" name="telefoonnummer"><br><br>
+			</fieldset><br>
+			<fieldset>
+				<legend>Beschrijving van de klachten</legend>
+				<input type="checkbox" name="klacht" value="kiespijn">Kiespijn
+				<input type="checkbox" name="klacht" value="controle">Controle
+				<input type="checkbox" name="klacht" value="anders">Anders <br><br>
+				<label for="bestand">Selecteer een foto/afbeelding (maximaal 1)</label>
+				<input id="bestand" type="file" name="Tandartspraktijk" accept=".jpg, .png, .jpeg, .svg, .gif"><br><br>
+			</fieldset><br>
+			<fieldset>
+				<legend>Toelichting van de klachten</legend>
+				<label for="toelichting">Licht uw klacht toe</label>
+				<textarea id="toelichting" maxlength="1500" placeholder="Bijvoorbeeld: een van mijn kiezen rechtsboven is erg gevoelig tijdens het kauwen."></textarea><br><br>
+				<label for="datum_prik">Kies een datum</label>
+				<input id="datum_prik" type="date" name="datum">
+			</fieldset><br>
+			<input type="submit" value="Verzend">
+		</form>
+	</body>
+</html>
